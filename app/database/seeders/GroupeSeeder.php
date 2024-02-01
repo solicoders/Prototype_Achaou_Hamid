@@ -13,7 +13,7 @@ class GroupeSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::create([
+        DB::table("groupes")->insert([
             [
                 "nom" => "101",
                 "description" => "Developper mobile groupe 101",

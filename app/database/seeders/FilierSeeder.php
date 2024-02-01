@@ -13,7 +13,7 @@ class FilierSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::create([
+        DB::table("filiers")->insert([
             [
                 "nom" => "Dev Mobile",
                 "description" => "Developper des application  mobile en utiliser pluser technology",
