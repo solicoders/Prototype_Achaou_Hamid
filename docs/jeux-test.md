@@ -16,7 +16,7 @@ php artisan make:seeder groupeSeeder
 php artisan db:seed
 ```
 
-## install admin LTE 3.2
-```bash
-npm install admin-lte@^3.2 --save
-```
+## iLivrable
+-  [app](https://github.com/solicoders/Prototype_Achaou_Hamid/tree/develop/app)
+-  [seeder filier](../app/database/seeders/filier/FilierSeeder.php)
+-  [seeder groupe](../app/database/seeders/groupe/GroupeSeeder.php)
