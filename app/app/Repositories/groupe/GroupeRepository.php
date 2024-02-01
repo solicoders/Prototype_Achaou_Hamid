@@ -10,5 +10,17 @@ class GroupeRepository extends BaseRepository {
     {
         parent::__construct($groupe);
     }
+
+    // search
+    public function searchGroupe($valueSearch)
+    {
+        $get_data =  $this->model->where(function ($query) use ($valueSearch) {
+            $query->where('nom', 'like', '%' . $valueSearch . '%')
+                ->orWhere('description', 'like', '%' . $valueSearch . '%');
+        });
+
+        return $get_data->paginate(4);
+    
+    }
 }
 
