@@ -8,7 +8,7 @@
             </tr>
         </thead>
         <tbody>
-            @include('groupe.search')
+            @include('filier.search')
         </tbody>
         <input type="hidden" id='page' value="1">
     </table>

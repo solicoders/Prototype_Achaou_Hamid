@@ -1,4 +1,4 @@
-@forelse ($filiers as $filier)
+@forelse ($filier as $filier)
     <tr>
         <td>{{ $filier->nom }}</td>
         <td>{{ Str::limit($filier->description, 30) }}</td>

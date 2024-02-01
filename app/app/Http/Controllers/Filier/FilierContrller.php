@@ -26,12 +26,10 @@ class FilierContrller extends Controller
             if (!$groupe -> count()) {
                 return 'false' ; 
             }
-            return view('groupe.search', compact('groupe'))->render();
+            return view('filier.search', compact('groupe'))->render();
         } 
         $filier = $this->filierRepository->getAll();
         
-        // dd($groupes);
-
 
         return view("filier.index",Compact('filier'));
 
