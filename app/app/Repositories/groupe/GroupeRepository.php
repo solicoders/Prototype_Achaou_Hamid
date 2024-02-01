@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\groupe;
+namespace App\Repositories\Groupe;
 
 use App\Models\groupe\Groupe;
 use App\Repositories\BaseRepository;
