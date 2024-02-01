@@ -1,17 +1,17 @@
-@forelse ($filiers as $filier)
+@forelse ($groupe as $groupe)
     <tr>
-        <td>{{ $filier->nom }}</td>
-        <td>{{ Str::limit($filier->description, 30) }}</td>
+        <td>{{ $groupe->nom }}</td>
+        <td>{{ Str::limit($groupe->description, 30) }}</td>
 
         <td class="">
-            <a href="{{ route('filier.show', ['filier' => $filier->id]) }}" class="btn btn-sm btn-default mx-2">
+            <a href="{{ route('groupe.show', ['groupe' => $groupe->id]) }}" class="btn btn-sm btn-default mx-2">
                 <i class="fa-regular fa-eye"></i>
             </a>
-            <a href="{{ route('filier.edit', ['filier' => $filier->id]) }}" class="btn btn-sm btn-default mx-2">
+            <a href="{{ route('groupe.edit', ['groupe' => $groupe->id]) }}" class="btn btn-sm btn-default mx-2">
                 <i class="fa-solid fa-pen-to-square"></i>
             </a>
-            <button type="submit" class="btn btn-sm btn-danger" onclick="deletefilier({{ $filier->id }})" data-toggle="modal"
-                    data-target="#deletefilier">
+            <button type="submit" class="btn btn-sm btn-danger" onclick="deletegroupe({{ $groupe->id }})" data-toggle="modal"
+                    data-target="#deletegroupe">
                 <i class="fa-solid fa-trash"></i>
             </button>
         </td>
@@ -27,7 +27,7 @@
     <td></td>
     <td>
         <div class="pagination m-0 float-right">
-            {{ $filier->links() }}
+            {{ $groupe->links() }}
         </div>
     </td>
 </tr>
