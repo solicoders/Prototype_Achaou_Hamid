@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Filier\FilierContrller;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\TextUI\Configuration\GroupCollection;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FilierContrller::class, 'index'])->name('filier.index');
+
+Route::resource('filier', FilierContrller::class);
+Route::resource('groupe', GroupCollection::class);

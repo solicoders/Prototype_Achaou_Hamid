@@ -5,6 +5,7 @@
 ### create controller groupe
 ```bash
   php artisan make:controller GroupesContrller -r
+  php artisan make:controller FilierContrller -r
 ```
 ### create Request validate
 ```bash
