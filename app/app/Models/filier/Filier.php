@@ -13,6 +13,7 @@ class Filier extends Model
     protected $fillable = [
         'nom',
         'description',
+        'filier_id',
     ];
 
     public function groupe()
