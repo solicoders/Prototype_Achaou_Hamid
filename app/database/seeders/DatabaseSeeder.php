@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\filier\FilierSeeder;
+use Database\Seeders\groupe\GroupeSeeder;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
